@@ -23,8 +23,11 @@ const getStringLengths = (strings) => {
 
 // Problem 3
 const sortWordsZtoA = (words) => {
-
+  // expected output in README is innacurate
+  words.sort((a, b) => b.localeCompare(a));
 };
+sortWordsZtoA(sampleWords);
+console.log(sampleWords);
 
 /* -------------------------------------------- */
 /* --------------NUMBER PROBLEMS--------------- */
