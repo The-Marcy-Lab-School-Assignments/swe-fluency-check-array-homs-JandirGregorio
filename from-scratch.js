@@ -33,18 +33,20 @@ sortWordsZtoA(sampleWords);
 /* --------------NUMBER PROBLEMS--------------- */
 /* -------------------------------------------- */
 
-const sampleNumbers = [7, 3, 9, 1, 4, 8, 2, 10, 5, 6];
+const sampleNumbers = [20, 7, 3, 9, 1, 4, 8, 2, 10, 5, 6];
 
 // Problem 4
 const getEvenNumbers = (nums) => {
   return nums.filter((num) => num % 2 === 0);
 };
-console.log(getEvenNumbers(sampleNumbers));
+// console.log(getEvenNumbers(sampleNumbers));
 
 // Problem 5
 const getLargestNumber = (numbers) => {
-
+  return numbers.reduce((num1, num2) => Math.max(num1, num2));
 };
+
+// console.log(getLargestNumber(sampleNumbers));
 
 /* -------------------------------------------------- */
 /* --------------OBJECT ARRAY PROBLEMS--------------- */
